@@ -44,7 +44,8 @@ function modifiedBubbleSort(arr){
 }
 
 
-/** Testing Bubble sort algorithm **/
+/******************* Testing Bubble sort algorithm *********************/
+
 /**
  * Returns a random integer between min (inclusive) and max (inclusive)
  * Using Math.round() will give you a non-uniform distribution!
@@ -55,9 +56,10 @@ function getRandomInt(min, max) {
 
 var arr = [];
 
-for(var i=0;i<10;i++){
+for(var i=0;i<10;i++){//initialize a random integer unsorted array
     arr.push(getRandomInt(1, 100));
 }
+
 console.log("Unsorted array: ");
 console.log(arr); //printing unsorted array
 
