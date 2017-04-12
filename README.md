@@ -23,7 +23,6 @@ The latest ECMAScript standard defines seven data types:
   - String (Sequence of textual characters. Strings are immutable in Javascript)
   - [Symbol](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Symbol) (new in ECMAScript 6)
 
-and
 - [Object](https://www.w3schools.com/js/js_object_definition.asp)
 
 #### Arrays
@@ -63,22 +62,22 @@ node file.js
 
 # Table of Contents
 
-- [Data Structure](./Data Structure/)
-  - [Linked List](./Data Structure/Linked List/)
-  - [Stack](./Data Structure/Stack/)
-  - [Queue](./Data Structure/Queue/)
-  - [BST](./Data Structure/BST/)
+- [Data Structure](./Data%20Structure/)
+  - [Linked List](./Data%20Structure/Linked%20List/)
+  - [Stack](./Data%20Structure/Stack/)
+  - [Queue](./Data%20Structure/Queue/)
+  - [BST](./Data%20Structure/BST/)
 
 
 - [Searching](./Searching/)
-  - [Linear Search](./Searching/Linear Search/)
-  - [Binary Search](./Searching/Binary Search/)
-  - [Ternary Search](./Searching/Ternary Search/)
+  - [Linear Search](./Searching/Linear%20Search/)
+  - [Binary Search](./Searching/Binary%20Search/)
+  - [Ternary Search](./Searching/Ternary%20Search/)
 
 
 - [Sorting](./Sorting/)
-  - [Selection Sort](./Sorting/Selection Sort/)
-  - [Bubble Sort](./Sorting/Bubble Sort/)
-  - [Insertion Sort](./Sorting/Insertion Sort/)
-  - [Merge Sort](./Sorting/Merge Sort/)
-  - [Quick Sort](./Sorting/Quick Sort/)
+  - [Selection Sort](./Sorting/Selection%20Sort/)
+  - [Bubble Sort](./Sorting/Bubble%20Sort/)
+  - [Insertion Sort](./Sorting/Insertion%20Sort/)
+  - [Merge Sort](./Sorting/Merge%20Sort/)
+  - [Quick Sort](./Sorting/Quick%20Sort/)
