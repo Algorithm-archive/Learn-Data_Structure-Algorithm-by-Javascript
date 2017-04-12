@@ -72,6 +72,7 @@ function LinkedList() {
 	/* Remove an item from the front */
 	this.removeFromFront = function() {
 		if (this.isEmpty()) { //No value in the linkedList
+			console.log("List is empty");
 			return null;
 		} else { //To remove the item copy the value in an temporary variable and point the current Head to the next data
 			var item = this.head.data;
@@ -85,6 +86,7 @@ function LinkedList() {
 	/* Remove an item from the Last */
 	this.removeFromEnd = function() {
 		if (this.isEmpty()) { //No value in the linkedList
+			console.log("List is empty");
 			return null;
 		} else { //To remove the item from the End we need to track Two reference and traverse to the last
 			var prev = null, //prev will track the immediate previous value till the last
@@ -128,6 +130,40 @@ function LinkedList() {
 			this.length--;
 			return item;
 		}
+	}
+
+
+	/* Remove an item using the given value. Only the first occurence of the data will be deleted */
+	this.remove = function(data) {
+		if (this.isEmpty()) { //No value in the linkedList
+			console.log("List is empty");
+			return null;
+		}
+
+		var prev = null,
+			current = this.head;
+
+		while (current !== null) {
+			if (current.data === data) break;
+
+			prev = current;
+			current = current.next;
+		}
+
+		if (current === null) { //Given data not found in the list
+			console.log("Error! Data not found");
+			return null;
+		}
+
+		if (prev === null) { //Data found in the head of the List
+			return this.removeFromFront();
+		}
+
+		//Data found in a position other than first
+		var item = current.data;
+		prev.next = current.next; //Setting the previous nodes next to the current nodes next means the current node is not referenced anymore by any node
+		this.length--;
+		return item;
 	}
 
 
@@ -210,4 +246,6 @@ linkedList.showAll();
 console.log("Removed Data: ", linkedList.removeFromEnd()); //remove an item from the back
 linkedList.showAll();
 console.log("Removed Data: ", linkedList.removeAt(1)); //remove an item from the back
+linkedList.showAll();
+console.log("Removed Data: ", linkedList.remove(50)); //remove an item matching with the given value
 linkedList.showAll();
