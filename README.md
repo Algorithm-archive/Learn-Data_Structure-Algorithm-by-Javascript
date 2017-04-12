@@ -26,11 +26,11 @@ The latest ECMAScript standard defines seven data types:
 and
 - [Object](https://www.w3schools.com/js/js_object_definition.asp)
 
-##### Arrays
+#### Arrays
 Javascript **Arrays** are regular objects for which there is a particular relationship between integer-key-ed properties and the 'length' property. Additionally, arrays inherit from Array.prototype which provides to them a handful of convenient methods to manipulate arrays like indexOf (searching a value in the array) or push (adding an element to the array), etc. This makes arrays a perfect candidate to represent lists or sets.
 
 
-##### More details about data types in Javascript:
+#### More details about data types in Javascript:
 
 - [JavaScript data types and data structures - Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
 - [A Beginner’s Guide to JavaScript Variables and Datatypes - SitePoint](https://www.sitepoint.com/beginners-guide-javascript-variables-and-datatypes/)
@@ -58,3 +58,27 @@ node file.js
 * [Speaking JS](http://speakingjs.com/es5/index.html)
 * [You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS)
 * [Algorithms, 4th Edition (book by: Robert Sedgewick and Kevin Wayne)](http://algs4.cs.princeton.edu/home/)
+
+---
+
+# Table of Contents
+
+- [Data Structure](./Data Structure/)
+  - [Linked List](./Data Structure/Linked List/)
+  - [Stack](./Data Structure/Stack/)
+  - [Queue](./Data Structure/Queue/)
+  - [BST](./Data Structure/BST/)
+
+
+- [Searching](./Searching/)
+  - [Linear Search](./Searching/Linear Search/)
+  - [Binary Search](./Searching/Binary Search/)
+  - [Ternary Search](./Searching/Ternary Search/)
+
+
+- [Sorting](./Sorting/)
+  - [Selection Sort](./Sorting/Selection Sort/)
+  - [Bubble Sort](./Sorting/Bubble Sort/)
+  - [Insertion Sort](./Sorting/Insertion Sort/)
+  - [Merge Sort](./Sorting/Merge Sort/)
+  - [Quick Sort](./Sorting/Quick Sort/)
