@@ -29,7 +29,7 @@ function LinkedList() {
 			this.insert(data);
 		else { // traverse the list to reach at the end of the list and add the new item at the last
 			var current = this.head;
-			while (current.next) {
+			while (current.next !== null) {
 				current = current.next;
 			}
 
@@ -114,10 +114,10 @@ function LinkedList() {
 
 		if (position === 0) { //remove the first item of the list
 			return this.removeFromFront();
-		} else { //To remove the item from the position we need to traverse with two reference till that position and rmove the element
+		} else { //To remove the item from the position we need to traverse with two reference till that position and remove the element
 			var count = 0,
-				prev = null;
-			current = this.head;
+				prev = null,
+				current = this.head;
 
 			while (current !== null && count < position) {
 				prev = current;
@@ -231,7 +231,7 @@ linkedList.clear(); //clear the list
 linkedList.insertAt(1, 10); //inserting to an invalid position
 linkedList.insertAt(0, 10); //inserting at the front of the linkedList
 linkedList.showAll();
-linkedList.insertAt(1, 5); //inserting at he end of the linkedList
+linkedList.insertAt(1, 5); //inserting at the end of the linkedList
 linkedList.showAll();
 linkedList.insertAt(1, 2); //inserting at a middle position
 linkedList.showAll();
