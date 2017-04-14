@@ -120,6 +120,24 @@ The step-by-step algorithm to search is, starting at the first data node, and co
 - Space - O(n)
 
 
+
+### Variations
+
+#### Doubly Linked List
+
+In a single linked list, every node has link to its next node in the sequence. So, we can traverse from one node to other node only in one direction and we can not traverse back.
+
+Double linked list is a sequence of elements in which every element has links to its previous element and next element in the sequence.
+
+![Doubly Linked List](./images/doubly.png)
+
+In double linked list, every node has link to its previous node and next node. So, we can traverse forward by using next field and can traverse backward by using previous field.
+
+Doubly Linked List Implementation is almost same as the Singly Linked List except the places where we can use the facility of the Double Pointers (`next` and `prev`). In every operations we need to be careful about updating both of them.
+
+[More about Doubly Linked List Operations](http://btechsmartclass.com/DS/U1_T12.html)
+
+
 #### Array vs Linked List
 http://www.geeksforgeeks.org/linked-list-vs-array/
 
