@@ -138,6 +138,17 @@ Doubly Linked List Implementation is almost same as the Singly Linked List excep
 [More about Doubly Linked List Operations](http://btechsmartclass.com/DS/U1_T12.html)
 
 
+#### Circular Linked List
+
+In single linked list, every node points to its next node in the sequence and the last node points NULL. But in circular linked list, every node points to its next node in the sequence but the last node points to the first node in the list. That means circular linked list is similar to the single linked list except that the last node points to the first node in the list.
+
+![Circular Linked List](./images/circular.png)
+
+Circular lists are useful in applications to repeatedly go around the list (implementing round-robin algorithms). For example, when multiple applications are running on a PC, it is common for the operating system to put the running applications on a list and then to cycle through them, giving each of them a slice of time to execute, and then making them wait while the CPU is given to another application. It is convenient for the operating system to use a circular list so that when it reaches the end of the list it can cycle around to the front of the list.
+
+[More about Circular Linked List Operations](http://btechsmartclass.com/DS/U1_T11.html)
+
+
 #### Array vs Linked List
 http://www.geeksforgeeks.org/linked-list-vs-array/
 
