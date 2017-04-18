@@ -1,29 +1,33 @@
+/*
+    Stack Implementation in Javascript
+*/
+
 //Stack Class
-function Stack(){
-  var items = [];
+function Stack() {
+	var items = [];
 
-  this.push = function(element){
-    items.push(element);
-  }
+	this.push = function(element) {
+		items.push(element);
+	}
 
-  this.pop = function(){
-    return items.pop();
-  }
+	this.pop = function() {
+		return items.pop();
+	}
 
-  this.peek = function(){
-    return items[items.length - 1];
-  }
+	this.peek = function() {
+		return items[items.length - 1];
+	}
 
-  this.isEmpty = function(){
-    return items.length === 0;
-  }
+	this.isEmpty = function() {
+		return items.length === 0;
+	}
 
-  this.printAll = function(){
-    console.log(items.toString());
-  }
+	this.printAll = function() {
+		console.log(items.toString());
+	}
 }
 
-//Testing the Stack
+/***************** Testing the Stack ***************/
 var stack = new Stack();
 stack.push(10);
 stack.push(15);
