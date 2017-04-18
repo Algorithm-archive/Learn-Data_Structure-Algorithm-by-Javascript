@@ -42,7 +42,7 @@ To use a stack efficiently, we need to check the status of stack as well. For th
 
 
 ```
-In Javascript, Stack can be easily implemented by an Array. Javascript Arrays have the built-in methods called 'push' and 'pop', which do exactly the same operation as Stack.
+In JavaScript, Stack can be easily implemented by an Array. JavaScript Arrays have the built-in methods called 'push' and 'pop', which do exactly the same operation as Stack.
 ```
 
 
