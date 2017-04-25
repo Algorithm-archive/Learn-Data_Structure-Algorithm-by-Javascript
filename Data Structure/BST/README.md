@@ -10,7 +10,7 @@ BST is a collection of nodes arranged in a way where they maintain BST propertie
 
 ![BST](./images/binary_search_tree.jpg)
 
-**Basic Operations:**
+### Basic Operations:
 
 Following are the basic operations of a tree −
 
@@ -20,19 +20,19 @@ Following are the basic operations of a tree −
 - **In-order Traversal** − Traverses a tree in an in-order manner.
 - **Post-order Traversal** − Traverses a tree in a post-order manner.
 
-##### Search Operation
+#### Searching
 
 To search a given key in Binary Search Tree, we first compare it with root, if the key is present at root, we return root. If key is greater than root’s key, we recur for right subtree of root node. Otherwise we recur for left subtree.
 
 ![BST Search](./images/bst_search.png)
 
-##### Insertion
+#### Insertion
 
 Whenever an element is to be inserted, first locate its proper location. Start searching from the root node, then if the data is less than the key value, search for the empty location in the left subtree and insert the data. Otherwise, search for the empty location in the right subtree and insert the data.
 
 ![BST Insert](./images/bst_insert.png)
 
-##### Deletion
+#### Deletion
 
 When we delete a node, there possibilities arise.
 - **Node to be deleted is leaf:** Simply remove from the tree.
@@ -51,6 +51,58 @@ When we delete a node, there possibilities arise.
 ![BST Remove-3-4](./images/bst-remove-case-3-4.png)
 ![BST Remove-3-5](./images/bst-remove-case-3-5.png)
 ![BST Remove-3-6](./images/bst-remove-case-3-6.png)
+
+
+#### Tree Traversal
+
+Traversal is a process to visit all the nodes of a tree and may print their values too. Because, all nodes are connected via edges (links) we always start from the root (head) node. That is, we cannot randomly access a node in a tree.
+
+Unlike linear data structures (Array, Linked List, Queues, Stacks, etc.) which have only one logical way to traverse them, trees can be traversed in different ways. Following are the generally used ways for traversing trees.
+
+##### In-order Traversal (Left, Root, Right)
+
+In this traversal method, the left subtree is visited first, then the root and later the right sub-tree.
+
+- Check if the current node is empty / null.
+- Traverse the left subtree by recursively calling the in-order function.
+- Display the data part of the root (or current node).
+- Traverse the right subtree by recursively calling the in-order function.
+
+![In-order Traversal](./images/binary_tree_inorder.svg)
+
+**In-order: A, B, C, D, E, F, G, H, I**
+
+In a search tree, in-order traversal retrieves data in sorted order.
+
+
+##### Pre-order Traversal (Root, Left, Right)
+
+In this traversal method, the root node is visited first, then the left subtree and finally the right subtree.
+
+- Check if the current node is empty / null.
+- Display the data part of the root (or current node).
+- Traverse the left subtree by recursively calling the pre-order function.
+- Traverse the right subtree by recursively calling the pre-order function.
+
+![Pre-order Traversal](./images/binary_tree_preorder.svg)
+
+**Pre-order: F, B, A, D, C, E, G, I, H**
+
+##### Post-order Traversal (Left, Right, Root)
+
+In this traversal method, the root node is visited last, hence the name. First we traverse the left subtree, then the right subtree and finally the root node.
+
+- Check if the current node is empty / null.
+- Traverse the left subtree by recursively calling the post-order function.
+- Traverse the right subtree by recursively calling the post-order function.
+- Display the data part of the root (or current node).
+
+![Post-order Traversal](./images/binary_tree_postorder.svg)
+
+**Post-order: A, C, E, D, B, H, I, G, F**
+
+[More about Tree traversal](https://en.wikipedia.org/wiki/Tree_traversal)
+
 
 #### Complexity Analysis
 - Insertion - O(log n)

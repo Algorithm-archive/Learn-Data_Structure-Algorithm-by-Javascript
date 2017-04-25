@@ -42,7 +42,7 @@ function BinarySearchTree() {
 		}
 	}
 
-	//InOrder Traversal Printing of the Tree
+	//In-order Traversal Printing of the Tree
 	this.inOrderTraverse = function(node) {
 		if (node !== null) {
 			this.inOrderTraverse(node.left);
@@ -51,7 +51,7 @@ function BinarySearchTree() {
 		}
 	}
 
-	//PreOrder Traversal Printing of the Tree
+	//Pre-order Traversal Printing of the Tree
 	this.preOrderTraverse = function(node) {
 		if (node !== null) {
 			console.log(node.data);
@@ -60,7 +60,7 @@ function BinarySearchTree() {
 		}
 	}
 
-	//PostOrder Traversal Printing of the Tree
+	//Post-order Traversal Printing of the Tree
 	this.postOrderTraverse = function(node) {
 		if (node !== null) {
 			this.postOrderTraverse(node.left);
