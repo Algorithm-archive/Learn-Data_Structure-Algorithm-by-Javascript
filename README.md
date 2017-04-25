@@ -1,8 +1,8 @@
 # Learn Data Structure and Algorithms by Javascript
 
-**You need to have basic understanding of the JavaScript programming language to proceed with the codes from this repository.**
+> You need to have basic understanding of the JavaScript programming language to proceed with the codes from this repository.
 
----
+
 
 ## Table of Contents
 - [Introduction to JavaScript](#introduction)
