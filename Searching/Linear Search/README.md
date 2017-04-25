@@ -5,15 +5,11 @@
 ![Linear Search](linear_search.gif)
 
 
-#### Python Implementation
+#### JavaScript Implementation
 
-Though it is very easy in python to check for [an item's existence in a list](http://stackoverflow.com/a/7571665/4230330) by:
+Though it is very easy in JavaScript to find index of an item in a list using [indexOf method](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf?v=example):
 
-`item in list`
-
-and [finding an item's index](http://stackoverflow.com/a/176921/4230330) by:
-
-`list.index(item)`
+`list.indexOf(item)`
 
 but sometimes you might need to do some customization on the searching algorithm. Like- *'finding the last occurrence of the item in the list'* etc. This linear search implementation will help you to do that.
 
