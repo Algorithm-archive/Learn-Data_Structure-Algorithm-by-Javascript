@@ -1,8 +1,34 @@
-# Introduction
+# Learn Data Structure and Algorithms by Javascript
 
 **You need to have basic understanding of the JavaScript programming language to proceed with the codes from this repository.**
 
 ---
+
+## Table of Contents
+- [Introduction to JavaScript](#introduction)
+- [Data Structure](./Data%20Structure/)
+  - [Linked List](./Data%20Structure/Linked%20List/)
+  - [Stack](./Data%20Structure/Stack/)
+  - [Queue](./Data%20Structure/Queue/)
+  - [BST](./Data%20Structure/BST/)
+
+
+- [Searching](./Searching/)
+  - [Linear Search](./Searching/Linear%20Search/)
+  - [Binary Search](./Searching/Binary%20Search/)
+  - [Ternary Search](./Searching/Ternary%20Search/)
+
+
+- [Sorting](./Sorting/)
+  - [Selection Sort](./Sorting/Selection%20Sort/)
+  - [Bubble Sort](./Sorting/Bubble%20Sort/)
+  - [Insertion Sort](./Sorting/Insertion%20Sort/)
+  - [Merge Sort](./Sorting/Merge%20Sort/)
+  - [Quick Sort](./Sorting/Quick%20Sort/)
+
+---
+
+## Introduction
 
 JavaScript is a **loosely typed** or a **dynamic language**. That means you don't have to declare the type of a variable ahead of time. The type will get determined automatically while the program is being processed. That also means that you can have the same variable as different types:
 ```javascript
@@ -59,27 +85,3 @@ node file.js
 * [You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS)
 * [JavaScript - Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [Algorithms, 4th Edition (book by: Robert Sedgewick and Kevin Wayne)](http://algs4.cs.princeton.edu/home/)
-
----
-
-# Table of Contents
-
-- [Data Structure](./Data%20Structure/)
-  - [Linked List](./Data%20Structure/Linked%20List/)
-  - [Stack](./Data%20Structure/Stack/)
-  - [Queue](./Data%20Structure/Queue/)
-  - [BST](./Data%20Structure/BST/)
-
-
-- [Searching](./Searching/)
-  - [Linear Search](./Searching/Linear%20Search/)
-  - [Binary Search](./Searching/Binary%20Search/)
-  - [Ternary Search](./Searching/Ternary%20Search/)
-
-
-- [Sorting](./Sorting/)
-  - [Selection Sort](./Sorting/Selection%20Sort/)
-  - [Bubble Sort](./Sorting/Bubble%20Sort/)
-  - [Insertion Sort](./Sorting/Insertion%20Sort/)
-  - [Merge Sort](./Sorting/Merge%20Sort/)
-  - [Quick Sort](./Sorting/Quick%20Sort/)
