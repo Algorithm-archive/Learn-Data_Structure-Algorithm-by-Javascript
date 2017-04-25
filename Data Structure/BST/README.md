@@ -63,14 +63,14 @@ Unlike linear data structures (Array, Linked List, Queues, Stacks, etc.) which h
 
 In this traversal method, the left subtree is visited first, then the root and later the right sub-tree.
 
+![In-order Traversal](./images/binary_tree_inorder.svg)
+
+**In-order: A, B, C, D, E, F, G, H, I**
+
 - Check if the current node is empty / null.
 - Traverse the left subtree by recursively calling the in-order function.
 - Display the data part of the root (or current node).
 - Traverse the right subtree by recursively calling the in-order function.
-
-![In-order Traversal](./images/binary_tree_inorder.svg)
-
-**In-order: A, B, C, D, E, F, G, H, I**
 
 In a search tree, in-order traversal retrieves data in sorted order.
 
@@ -79,27 +79,29 @@ In a search tree, in-order traversal retrieves data in sorted order.
 
 In this traversal method, the root node is visited first, then the left subtree and finally the right subtree.
 
+![Pre-order Traversal](./images/binary_tree_preorder.svg)
+
+**Pre-order: F, B, A, D, C, E, G, I, H**
+
 - Check if the current node is empty / null.
 - Display the data part of the root (or current node).
 - Traverse the left subtree by recursively calling the pre-order function.
 - Traverse the right subtree by recursively calling the pre-order function.
 
-![Pre-order Traversal](./images/binary_tree_preorder.svg)
-
-**Pre-order: F, B, A, D, C, E, G, I, H**
 
 #### Post-order Traversal (Left, Right, Root)
 
 In this traversal method, the root node is visited last, hence the name. First we traverse the left subtree, then the right subtree and finally the root node.
+
+![Post-order Traversal](./images/binary_tree_postorder.svg)
+
+**Post-order: A, C, E, D, B, H, I, G, F**
 
 - Check if the current node is empty / null.
 - Traverse the left subtree by recursively calling the post-order function.
 - Traverse the right subtree by recursively calling the post-order function.
 - Display the data part of the root (or current node).
 
-![Post-order Traversal](./images/binary_tree_postorder.svg)
-
-**Post-order: A, C, E, D, B, H, I, G, F**
 
 [More about Tree traversal](https://en.wikipedia.org/wiki/Tree_traversal)
 
