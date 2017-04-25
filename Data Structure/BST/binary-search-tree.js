@@ -1,118 +1,128 @@
-// Binary Search Tree Implementation
-function BinarySearchTree(){
+/*
+    Binary Search Tree Implementation in Javascript
+*/
 
-    var Node = function(key){
-        this.key = key;
-        this.left = null;
-        this.right = null;
-    }
+//Binary Search Tree Class
+function BinarySearchTree() {
 
-    var root = null;
+	var Node = function(data) {
+		this.data = data; //data
+		this.left = null; //pointer to the left node
+		this.right = null; //pointer to the right node
+	}
 
-    this.getRoot = function(){
-        return root;
-    }
+	var root = null; //Root Node of the Binary Search Tree
 
-    this.insert = function(key){
-        var newNode = new Node(key);
+	this.getRoot = function() {
+		return root;
+	}
 
-        if(root == null)
-            root = newNode;
-        else
-            insertNode(root, newNode);
-    }
+	//Function to call for inserting a Node in the Tree
+	this.insert = function(data) {
+		var newNode = new Node(data);
 
-    var insertNode = function(node, newNode){
-        if(newNode.key <= node.key){
-            if(node.left === null)
-                node.left = newNode;
-            else
-                insertNode(node.left, newNode);
-        }
-        else{
-            if(node.right === null)
-                node.right = newNode;
-            else
-                insertNode(node.right, newNode);
-        }
-    }
+		if (root === null) //for the very first Node insertion in the Tree
+			root = newNode;
+		else
+			insertNode(root, newNode);
+	}
 
-    this.inOrderTraverse = function(node){
-        if(node !== null){
-            this.inOrderTraverse(node.left);
-            console.log(node.key);
-            this.inOrderTraverse(node.right);
-        }
-    }
+	//Helper function for the above 'insert' method
+	var insertNode = function(node, newNode) {
+		if (newNode.data <= node.data) { //Node should be inserted in the left sub-tree
+			if (node.left === null)
+				node.left = newNode;
+			else
+				insertNode(node.left, newNode);
+		} else { //Node should be inserted in the right sub-tree
+			if (node.right === null)
+				node.right = newNode;
+			else
+				insertNode(node.right, newNode);
+		}
+	}
 
-    this.preOrderTraverse = function(node){
-        if(node !== null){
-            console.log(node.key);
-            this.preOrderTraverse(node.left);
-            this.preOrderTraverse(node.right);
-        }
-    }
+	//InOrder Traversal Printing of the Tree
+	this.inOrderTraverse = function(node) {
+		if (node !== null) {
+			this.inOrderTraverse(node.left);
+			console.log(node.data);
+			this.inOrderTraverse(node.right);
+		}
+	}
 
-    this.postOrderTraverse = function(node){
-        if(node !== null){
-            this.postOrderTraverse(node.left);
-            this.postOrderTraverse(node.right);
-            console.log(node.key);
-        }
-    }
+	//PreOrder Traversal Printing of the Tree
+	this.preOrderTraverse = function(node) {
+		if (node !== null) {
+			console.log(node.data);
+			this.preOrderTraverse(node.left);
+			this.preOrderTraverse(node.right);
+		}
+	}
 
-    this.findMinNode = function(node){
-        if(node === null || node.left === null)
-            return node;
+	//PostOrder Traversal Printing of the Tree
+	this.postOrderTraverse = function(node) {
+		if (node !== null) {
+			this.postOrderTraverse(node.left);
+			this.postOrderTraverse(node.right);
+			console.log(node.data);
+		}
+	}
 
-        return this.findMinNode(node.left);
-    }
+	//Find the Node with the Minimum value in the Tree
+	this.findMinNode = function(node) {
+		if (node === null || node.left === null)
+			return node;
 
-    this.findMaxNode = function(node){
-        if(node === null || node.right === null)
-            return node;
+		return this.findMinNode(node.left);
+	}
 
-        return this.findMaxNode(node.right);
-    }
+	//Find the Node with the Maximum value in the Tree
+	this.findMaxNode = function(node) {
+		if (node === null || node.right === null)
+			return node;
 
-    this.searchOnTree = function(node, key){
-        if(node === null)
-            return false;
+		return this.findMaxNode(node.right);
+	}
 
-        if(key < node.key)
-            return searchOnTree(node.left, key);
-        else if(key > node.key)
-            return searchOnTree(node.right, key);
-        else
-            return true;
-    }
+	//Search a Node with the given 'data' in the Tree
+	this.searchOnTree = function(node, data) {
+		if (node === null)
+			return false;
 
-    this.removeNode = function(node, key){
-        if(node === null) return null; // empty tree
+		if (data < node.data)
+			return this.searchOnTree(node.left, data);
+		else if (data > node.data)
+			return this.searchOnTree(node.right, data);
+		else
+			return true;
+	}
 
-        if(key < node.key){ // value is less than node's number. so go to left subtree
-            node.left = this.removeNode(node.left, key);
-        }
-        else if(key > node.key){ // value is greater than node's number. so go to right subtree
-            node.right = this.removeNode(node.right, key);
-        }
-        else{ // node found. Let's delete it!
+	//Delete a Node from the Tree with the given 'data'
+	this.removeNode = function(node, data) {
+		if (node === null) return null; // empty tree
 
-            if(node.left === null && node.rigth === null) //node has no child
-                node = null;
-            else if(node.left === null) // node has only right child
-                node = node.right;
-            else if(node.right === null) // node has only left child
-                node = node.left;
-            else{ // node has two children
-                var tmp = this.findMinNode(node.right);
-                node.key = tmp.key;
-                node.right = this.removeNode(node.right, tmp.key);
-            }
-        }
+		if (data < node.data) { // value is less than node's number. so go to left subtree
+			node.left = this.removeNode(node.left, data);
+		} else if (data > node.data) { // value is greater than node's number. so go to right subtree
+			node.right = this.removeNode(node.right, data);
+		} else { // node found. Let's delete it!
 
-        return node;
-    }
+			if (node.left === null && node.rigth === null) //node has no child
+				node = null;
+			else if (node.left === null) // node has only right child
+				node = node.right;
+			else if (node.right === null) // node has only left child
+				node = node.left;
+			else { // node has two children
+				var tmp = this.findMinNode(node.right);
+				node.data = tmp.data;
+				node.right = this.removeNode(node.right, tmp.data);
+			}
+		}
+
+		return node;
+	}
 }
 
 
@@ -124,17 +134,33 @@ var len = arr.length;
 
 var bst = new BinarySearchTree();
 
-for(var i=0;i<len;i++){
-    bst.insert(arr[i]);
+for (var i = 0; i < len; i++) {
+	bst.insert(arr[i]);
 }
 
-console.log("In-order Tree printing: ");
+console.log("InOrder Tree printing: ");
 bst.inOrderTraverse(bst.getRoot());
 
-console.log(bst.searchOnTree(70));
-console.log(bst.searchOnTree(100));
+console.log("PreOrder Tree printing: ");
+bst.preOrderTraverse(bst.getRoot());
 
-bst.removeNode(bst.getRoot(), 5);
+console.log("PostOrder Tree printing: ");
+bst.postOrderTraverse(bst.getRoot());
+
+console.log('value 70 exists in the tree? ');
+console.log('=>', bst.searchOnTree(bst.getRoot(), 70));
+console.log('value 17 exists in the tree? ');
+console.log('=>', bst.searchOnTree(bst.getRoot(), 17));
+console.log('value 100 exists in the tree? ');
+console.log('=>', bst.searchOnTree(bst.getRoot(), 100));
+
+
+var removedNode = bst.removeNode(bst.getRoot(), 5);
+if (removedNode === null) {
+	console.log('Node with value 5 not exists in the tree');
+} else {
+	console.log('Node with value 5 deleted from the tree');
+}
 
 console.log("In-order Tree printing: ");
 bst.inOrderTraverse(bst.getRoot());

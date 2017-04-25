@@ -1,6 +1,6 @@
 /* This example and code taken from 'Learning Javascript Data Structures and Algorithms - Loiane Groner'
 
-N.B.: This implementation is a very naive approach to Priority Queue. This requires O(n) worst case complexity in Insertion. Generally Priority Queues implemented by HEAP, another popular data structure, which can be found in the respective section of this repository.
+N.B.: This implementation is a very naive approach to Priority Queue. This requires O(n) worst case complexity in Insertion. Generally Priority Queues are implemented by HEAP, another popular data structure, which can be found in the respective section of this repository.
 */
 
 //PriorityQueue Class
