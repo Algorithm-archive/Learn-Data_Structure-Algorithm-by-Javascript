@@ -9,12 +9,12 @@ Selection sort algorithm starts by compairing first two elements of an array and
 
 If there are n elements to be sorted then, the process mentioned above should be repeated n-1 times to get required result.
 
-#####A visualization on Selection Sort
+#### A visualization on Selection Sort
 ![Selection sort demonstration](https://upload.wikimedia.org/wikipedia/commons/9/94/Selection-Sort-Animation.gif)
 
 *Selection sort animation. Red is current min. Yellow is sorted list. Blue is current item.*
 
-####Complexity Analysis
+#### Complexity Analysis
 - Worst Case - O(n<sup>2</sup>)
 - Average Case - O(n<sup>2</sup>)
 - Best Case - O(n<sup>2</sup>)
