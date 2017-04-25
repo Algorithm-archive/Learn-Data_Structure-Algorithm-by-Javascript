@@ -1,25 +1,26 @@
-//Binary Search Implementation
-function binarySearch(arr, item){
-    var low = 0, high = arr.length - 1, mid, found = false;
+/* Binary Search Implementation in JavaScript */
 
-    while(low <= high){
-        mid = Math.floor((low+high)/2);
+function binarySearch(arr, item) {
+	var low = 0,
+		high = arr.length - 1,
+		mid, found = false;
 
-        if(arr[mid] === item){
-            found = true;
-            break;
-        }
-        else{
-            if(item < arr[mid]){
-                high = mid - 1;
-            }
-            else {
-                low = mid + 1;
-            }
-        }
-    }
+	while (low <= high) {
+		mid = Math.floor((low + high) / 2); //Midpoint of the Search Space
 
-    return found;
+		if (arr[mid] === item) { //Found the element
+			found = true;
+			break;
+		} else {
+			if (item < arr[mid]) { //Need to search in the left half of the search space
+				high = mid - 1;
+			} else { //Need to search in the right half of the search space
+				low = mid + 1;
+			}
+		}
+	}
+
+	return found;
 }
 
 
