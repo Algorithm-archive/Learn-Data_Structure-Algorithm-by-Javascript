@@ -65,7 +65,9 @@ JavaScript **Arrays** are regular objects for which there is a particular relati
 - [Introduction to Object-Oriented JavaScript - Mozilla Developer Network](https://developer.mozilla.org/ms/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript)
 - [OOP In JavaScript: What You NEED to Know - JavaScript is sexy](http://javascriptissexy.com/oop-in-javascript-what-you-need-to-know/)
 
-### Big-O Cheat Sheet
+### Big-O Notation and Time Complexity Analysis
+
+[Algorithms in plain English: time complexity and Big-O notation](https://medium.freecodecamp.com/time-is-complex-but-priceless-f0abd015063c)
 
 [Big-O Cheat Sheet Link](http://bigocheatsheet.com/)
 
