@@ -1,36 +1,46 @@
-// Merge Sort Implementation
-function mergeSort(arr){
-    var len = arr.length;
+/*  Merge Sort Implementation in JavaScript */
 
-    if(len === 1) return arr;
+function mergeSort(arr) {
+	var len = arr.length;
 
-    var mid = Math.floor(len/2);
-    var left = arr.slice(0, mid);
-    var right = arr.slice(mid, len);
+	if (len === 1) return arr; //Single element left, No need to further divide
 
-    return merge(mergeSort(left), mergeSort(right));
+	var mid = Math.floor(len / 2);
+	var left = arr.slice(0, mid); //grab the left half of the current list
+	var right = arr.slice(mid, len); //grab the right half of the current list
+
+	return merge(mergeSort(left), mergeSort(right)); //recursively call with the list to divide and then merge them two together to get the sorted result
 }
 
-function merge(left, right){
-    var result = [];
-    var leftCount = 0, rightCount = 0;
+//merge the given two portions of a list
+function merge(left, right) {
+	var result = [];
+	var leftCount = 0,
+		rightCount = 0;
 
-    while(leftCount < left.length && rightCount < right.length){
-        if(left[leftCount] < right[rightCount])
-            result.push(left[leftCount++]);
-        else
-            result.push(right[rightCount++]);
-    }
+	//Compare taking two elements from two list each time and set the smallest one to the new list. continue doing the same until one list is empty
+	while (leftCount < left.length && rightCount < right.length) {
+		if (left[leftCount] < right[rightCount])
+			result.push(left[leftCount++]);
+		else
+			result.push(right[rightCount++]);
+	}
 
-    while(leftCount < left.length){
-        result.push(left[leftCount++]);
-    }
+	/*If a single list is empty the previous loop will be ended. But we also need to get the leftover from the another list. Following two will just grab the leftovers(if any) from the given two lists.*/
 
-    while(rightCount < right.length){
-        result.push(right[rightCount++]);
-    }
+	//take the leftovers from the left array(if any)
+	//Following loop can also replaced by a single line code like: result.concat(left.slice(leftCount, left.length))
+	while (leftCount < left.length) {
+		result.push(left[leftCount++]);
+	}
 
-    return result;
+	//take the leftovers from the right array(if any)
+	//Following loop can also replaced by a single line code like: result.concat(right.slice(rightCount, right.length))
+	while (rightCount < right.length) {
+		result.push(right[rightCount++]);
+	}
+
+	return result;
 }
 
 
@@ -41,13 +51,13 @@ function merge(left, right){
  * Using Math.round() will give you a non-uniform distribution!
  */
 function getRandomInt(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+	return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
 var arr = [];
 
-for(var i=0;i<10;i++){ //initialize a random integer unsorted array
-    arr.push(getRandomInt(1, 100));
+for (var i = 0; i < 10; i++) { //initialize a random integer unsorted array
+	arr.push(getRandomInt(1, 100));
 }
 
 console.log("Unsorted array: ");
