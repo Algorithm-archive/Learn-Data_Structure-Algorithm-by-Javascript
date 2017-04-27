@@ -12,6 +12,7 @@ While comparing two sub-lists for merging, the first element of both lists is ta
 ![Merge Sort](./images/merge-sort.png)
 
 #### A visualization on Merge Sort
+
 ![Merge sort demonstration](./images/merge-sort-animation.gif)
 
 *An example of merge sort. First divide the list into the smallest unit (1 element), then compare each element with the adjacent list to sort and merge the two adjacent lists. Finally all the elements are sorted and merged. (image source-wikipedia)*
