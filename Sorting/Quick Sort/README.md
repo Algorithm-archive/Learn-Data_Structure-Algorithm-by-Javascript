@@ -32,5 +32,4 @@ The principle of the quicksort algorithm is this:
 - [Quick Sort - KhanAcademy Tutorial](https://www.khanacademy.org/computing/computer-science/algorithms/quick-sort/a/overview-of-quicksort)
 - [Understanding Quicksort (with interactive demo)](http://me.dt.in.th/page/Quicksort/)
 - [Quick Sort - HackerEarch Tutorial](https://www.hackerearth.com/practice/algorithms/sorting/quick-sort/tutorial/)
-- [Sorting - TopCoder Tutorial](https://www.topcoder.com/community/data-science/data-science-tutorials/sorting/)
 - [Computer science in JavaScript: Quicksort](https://www.nczonline.net/blog/2012/11/27/computer-science-in-javascript-quicksort/)

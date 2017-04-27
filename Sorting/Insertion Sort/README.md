@@ -16,6 +16,5 @@
 - Best Case - O(n)
 
 ### More on this topic
-- https://en.wikipedia.org/wiki/Insertion_sort
-- http://quiz.geeksforgeeks.org/insertion-sort/
-- https://www.topcoder.com/community/data-science/data-science-tutorials/sorting/
+- [Insertion Sort - WikiPedia](https://en.wikipedia.org/wiki/Insertion_sort)
+- [Insertion Sort - geeksforgeeks](http://quiz.geeksforgeeks.org/insertion-sort/)

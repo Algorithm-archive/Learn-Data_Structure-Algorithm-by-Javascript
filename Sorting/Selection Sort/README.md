@@ -20,6 +20,5 @@ If there are n elements to be sorted then, the process mentioned above should be
 - Best Case - O(n<sup>2</sup>)
 
 ### More on this topic
-- https://en.wikipedia.org/wiki/Selection_sort
-- http://quiz.geeksforgeeks.org/selection-sort/
-- https://www.topcoder.com/community/data-science/data-science-tutorials/sorting/
+- [Selection Sort - WikiPedia](https://en.wikipedia.org/wiki/Selection_sort)
+- [Selection Sort - geeksforgeeks](http://quiz.geeksforgeeks.org/selection-sort/)

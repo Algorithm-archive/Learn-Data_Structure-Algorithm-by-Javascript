@@ -26,4 +26,3 @@ While comparing two sub-lists for merging, the first element of both lists is ta
 - [Merge Sort - Wikipedia](https://en.wikipedia.org/wiki/Merge_sort)
 - [Merge Sort - KhanAcademy Tutorial](https://www.khanacademy.org/computing/computer-science/algorithms/merge-sort/a/overview-of-merge-sort)
 - [Merge Sort - HackerEarch Tutorial](https://www.hackerearth.com/practice/algorithms/sorting/merge-sort/tutorial/)
-- [Sorting - TopCoder Tutorial](https://www.topcoder.com/community/data-science/data-science-tutorials/sorting/)

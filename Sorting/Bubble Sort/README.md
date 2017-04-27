@@ -21,6 +21,5 @@ Starting from the beginning of the list, compare every adjacent pair, swap their
 - Best Case - O(n)
 
 ### More on this topic
-- http://en.wikipedia.org/wiki/Bubble_sort
-- http://quiz.geeksforgeeks.org/bubble-sort/
-- https://www.topcoder.com/community/data-science/data-science-tutorials/sorting/
+- [Bubble Sort](http://en.wikipedia.org/wiki/Bubble_sort)
+- [Bubble Sort](http://quiz.geeksforgeeks.org/bubble-sort/)
