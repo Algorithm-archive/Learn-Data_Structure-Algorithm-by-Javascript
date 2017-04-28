@@ -34,7 +34,7 @@
   - [Merge Sort](./Sorting/Merge%20Sort/)
   - [Quick Sort](./Sorting/Quick%20Sort/)
   - Bucket Sort
-  - Counting Sort
+  - [Counting Sort](./Sorting/Counting%20Sort/)
   - Heap Sort
   - Radix Sort
 
