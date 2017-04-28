@@ -19,7 +19,7 @@ function insertionSort(arr) {
 	return arr;
 }
 
-/******************* Testing Selection sort algorithm *********************/
+/******************* Testing Insertion sort algorithm *********************/
 
 /**
  * Returns a random integer between min (inclusive) and max (inclusive)

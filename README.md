@@ -36,7 +36,7 @@
   - Bucket Sort
   - [Counting Sort](./Sorting/Counting%20Sort/)
   - Heap Sort
-  - Radix Sort
+  - [Radix Sort](./Sorting/Radix%20Sort/)
 
 
 - Graph Algorithms

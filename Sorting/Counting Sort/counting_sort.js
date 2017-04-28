@@ -25,7 +25,7 @@ function countingSort(arr) {
 	return sortedArray;
 }
 
-/******************* Testing Selection sort algorithm *********************/
+/******************* Testing Counting sort algorithm *********************/
 
 /**
  * Returns a random integer between min (inclusive) and max (inclusive)
