@@ -198,3 +198,7 @@ node file.js
 * [You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS)
 * [JavaScript - Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [Algorithms, 4th Edition (book by: Robert Sedgewick and Kevin Wayne)](http://algs4.cs.princeton.edu/home/)
+* [Khan Academy tutorial on Algorithms](https://www.khanacademy.org/computing/computer-science/algorithms)
+* [Topcoder Tutorials](https://www.topcoder.com/community/data-science/data-science-tutorials/)
+* [GeeksforGeeks](http://www.geeksforgeeks.org/)
+* [hackerearth Tutorial](https://www.hackerearth.com/practice/)
