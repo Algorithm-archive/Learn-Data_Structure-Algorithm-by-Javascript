@@ -192,12 +192,12 @@ Then you can run a JavaScript file like this:
 node file.js
 ```
 
-### ES6 implementations
+### ES6/ES2015 implementations
 There are ES6 implementations of the Data Structures and Algorithms in their respective folders within a separate folder named `es6`.
 Couple of things to notice here:
 * There are no true **private properties** available in ES6 yet. So, in classes no [workarounds or hacks](http://2ality.com/2016/01/private-data-classes.html) used to implement private properties. There are several [proposals](https://github.com/wycats/javascript-private-state) and initiative ongoing to introduce it in ECMAScript. Hoping that would be done soon and we will then add it in our code.
-* We tried to implement the data structures and some algorithms in separate modules so that they can be used independently in any other codes. While `import` is indeed part of ES6, it is unfortunately not yet supported by any native environments, Node or browser. Until the native support introduced the easy workaround is to stick with the old **CommonJS Module format**(Which is supported in NodeJS and as we [advised earlier to test our codes in NodeJS](#how-to-use), so we are sticking with it). The modules will be [exported using CommonJS Module format and imported by 'require'](http://openmymind.net/2012/2/3/Node-Require-and-Exports/).
-Though there are other ways like `Babel`, `Rollup` etc., but that need some build configurations(And we don't want to make our codes more complicated). And at the end babel will convert the code to `require` and `module.exports` anyway. 
+* We tried to implement the data structures and some algorithms in separate modules so that they can be used independently in any other codes. While `import` is indeed [part of ES6](http://2ality.com/2014/09/es6-modules-final.html), it is unfortunately not yet supported by any native environments, Node or browser. Until the native support introduced the easy workaround is to stick with the old **CommonJS Module format**(Which is supported in NodeJS and as we [advised earlier to test our codes in NodeJS](#how-to-use), so we are sticking with it). The modules will be [exported using CommonJS Module format and imported by 'require'](http://openmymind.net/2012/2/3/Node-Require-and-Exports/).
+Though there are other ways like `Babel`, `Rollup` etc., but that need some build configurations(And we don't want to make our codes more complicated). And at the end babel will convert the code to `require` and `module.exports` anyway.
 
 
 ### Useful Links:
