@@ -5,7 +5,8 @@
 //Binary Search Tree Class
 function BinarySearchTree() {
 
-	var Node = function(data) {
+	//Node Class
+	var Node = function(data) { //Constructor function for a Node Class
 		this.data = data; //data
 		this.left = null; //pointer to the left node
 		this.right = null; //pointer to the right node

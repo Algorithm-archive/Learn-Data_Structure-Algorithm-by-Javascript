@@ -4,7 +4,7 @@
 
 //Stack Class
 function Stack() {
-	var items = [];
+	var items = []; //Items list is private data
 
 	this.push = function(element) {
 		items.push(element);

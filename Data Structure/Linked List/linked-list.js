@@ -6,7 +6,7 @@
 function LinkedList() {
 
 	/* Node class for a single Node */
-	var Node = function(data, next) {
+	var Node = function(data, next) { //Constructor function for a Node Class
 		this.data = data; // Data in Node
 		this.next = next; // Pointer to Next Node
 	}

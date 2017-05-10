@@ -5,9 +5,9 @@ N.B.: This implementation is a very naive approach to Priority Queue. This requi
 
 //PriorityQueue Class
 function PriorityQueue() {
-	var items = [];
+	var items = []; //Items list is private data
 
-	function QueueElement(element, priority) {
+	function QueueElement(element, priority) { //Constructor function for QueueElement
 		this.element = element;
 		this.priority = priority;
 	}

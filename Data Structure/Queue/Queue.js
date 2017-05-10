@@ -4,7 +4,7 @@
 
 //Queue Class
 function Queue() {
-	var items = [];
+	var items = []; //Items list is private data
 
 	this.enqueue = function(element) {
 		items.push(element);
