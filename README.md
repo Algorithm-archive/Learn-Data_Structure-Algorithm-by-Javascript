@@ -97,6 +97,7 @@
     - Greatest Common Divisor (GCD)
     - Longest Common Multiplier (LCM)
     - Euler Totient (Phi)
+    - Primality Testing
     - Prime finding(Sieve of Eratosthenes)
     - Prime factorization
     - Factorial
