@@ -21,10 +21,6 @@ function Stack() {
 	this.isEmpty = function() {
 		return items.length === 0;
 	}
-
-	this.printAll = function() {
-		console.log(items.toString());
-	}
 }
 
 /***************** Testing the Stack ***************/

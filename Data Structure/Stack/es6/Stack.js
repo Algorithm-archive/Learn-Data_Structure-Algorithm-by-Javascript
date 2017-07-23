@@ -22,10 +22,6 @@ class Stack {
 	isEmpty() {
 		return this._items.length === 0;
 	}
-
-	printAll() {
-		console.log(this._items.toString());
-	}
 }
 
 module.exports = Stack; //exporting the Stack module using CommonJS Module format
