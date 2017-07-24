@@ -4,6 +4,7 @@
 
     As fibonacci numbers follow the pattern of:
         Fib[n] = Fib[n-1] + Fib[n-2]
+    (having the base case of starting values-> Fib[0] = 0 and Fib[1] = 1)
     We can easily calculate n-th fibonacci number calculating
     all the previous values by this formula
 */
