@@ -18,7 +18,10 @@
 function fibonacci(n) {
     var fib, a = 0, b = 1;
 
-	while(n--) {
+    if(n === 0) return 0;
+    if(n === 1) return 1;
+    
+    while(--n) {
         fib = a + b;
         a = b;
         b = fib;
@@ -28,6 +31,31 @@ function fibonacci(n) {
 }
 
 
+/* Following is an optimized version of calculating Fibonacci using 'Memoization' or
+  'Dynamic Programming'.
+  To understand how this is actually working you need to read the following article first:
+  https://medium.freecodecamp.org/understanding-memoize-in-javascript-51d07d19430e
+*/
+
+function memoizedFunction(fn) {
+  var cache = {};
+
+  return function(n) {
+    if (n in cache) return cache[n];
+
+    cache[n] = fn(n);
+    return cache[n];
+  }
+}
+
+var memoizedFibonacci = memoizedFunction(function(x) {
+    if (x === 0) return 0;
+    if (x === 1) return 1;
+
+    return memoizedFibonacci(x - 1) + memoizedFibonacci(x - 2);
+});
+
+
 /************ Testing Fibonacci ***************/
 console.log(fibonacci(1));
 console.log(fibonacci(2));
@@ -35,3 +63,7 @@ console.log(fibonacci(3));
 console.log(fibonacci(4));
 console.log(fibonacci(5));
 console.log(fibonacci(10));
+
+console.log(memoizedFibonacci(5));
+console.log(memoizedFibonacci(6));
+console.log(memoizedFibonacci(10));

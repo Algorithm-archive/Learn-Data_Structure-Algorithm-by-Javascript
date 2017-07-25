@@ -17,7 +17,7 @@
 function factorial(n) {
     var fact = 1;
 
-	while(n) {
+  	while(n) {
         fact *= n;
         n--;
     }
@@ -48,7 +48,7 @@ var memoizedFactorial = memoizedFunction(function(x) {
       return 1;
     }
     else {
-      return x * memoizedFactorial(x - 1);
+      return x * memoizedFactorial(x - 1); //Recursive formula for factorial is: F[n] = n * F[n-1]
     }
 });
 
