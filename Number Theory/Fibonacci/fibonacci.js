@@ -18,9 +18,8 @@
 function fibonacci(n) {
     var fib, a = 0, b = 1;
 
-    if(n === 0) return 0;
-    if(n === 1) return 1;
-    
+    if(n === 0 || n === 1) return n;
+
     while(--n) {
         fib = a + b;
         a = b;
@@ -28,6 +27,16 @@ function fibonacci(n) {
     }
 
     return fib;
+}
+
+/*
+  Solving Fibonacci using recursion.
+  Recursive formula for Fibonacci is: F[n] = F[n-1] + F[n-2]
+*/
+function recursiveFibonacci(n) {
+    if (n === 0 || n === 1) return n;
+
+    return recursiveFibonacci(n-1) + recursiveFibonacci(n-2);
 }
 
 
@@ -49,14 +58,14 @@ function memoizedFunction(fn) {
 }
 
 var memoizedFibonacci = memoizedFunction(function(x) {
-    if (x === 0) return 0;
-    if (x === 1) return 1;
+    if (x === 0 || x === 1) return x;
 
-    return memoizedFibonacci(x - 1) + memoizedFibonacci(x - 2);
+    return memoizedFibonacci(x - 1) + memoizedFibonacci(x - 2); //Recursive formula for Fibonacci is: F[n] = F[n-1] + F[n-2]
 });
 
 
 /************ Testing Fibonacci ***************/
+console.log('====== Simple Fibonacci ==========');
 console.log(fibonacci(1));
 console.log(fibonacci(2));
 console.log(fibonacci(3));
@@ -64,6 +73,11 @@ console.log(fibonacci(4));
 console.log(fibonacci(5));
 console.log(fibonacci(10));
 
+console.log('====== Recursive Fibonacci ==========');
+console.log(recursiveFibonacci(5));
+console.log(recursiveFibonacci(10));
+
+console.log('====== Memoized Fibonacci ==========');
 console.log(memoizedFibonacci(5));
 console.log(memoizedFibonacci(6));
 console.log(memoizedFibonacci(10));
