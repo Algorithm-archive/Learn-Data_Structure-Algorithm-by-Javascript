@@ -113,7 +113,7 @@
     - Modular inverse
     - Probability
     - Chinese Remainder Theorem
-    - Gaussian Elmination method
+    - Gaussian Elimination method
     - Dilworth's Theorem
     - Matrix Exponentiation
 
@@ -137,6 +137,7 @@
  - Others
     - BackTracking
         - N-Queen's Problem
+    - [Tower of Hanoi Problem](./Others/Tower%20of%20Hanoi/)
 
 ---
 
