@@ -1,9 +1,7 @@
 /* Tower of Hanoi implementation in Javascript(ES6) */
 
 // This function will recursively store all the moves and return the moves information as Array
-const hanoi = (count, source, aux, destination, moves) => {
-    moves = moves || [];
-
+const hanoi = (count, source, aux, destination, moves = []) => {
     // When there is only single disk move it from 'source' to 'destination'
     if (count === 1) {
       moves.push({
