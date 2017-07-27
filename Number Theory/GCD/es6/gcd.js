@@ -1,4 +1,4 @@
-/* Greatest Common Divisor (GCD) Finding in JavaScript */
+/* Greatest Common Divisor (GCD) Finding in JavaScript (ES6) */
 
 const gcd = (a, b) => {
 	while (true) {

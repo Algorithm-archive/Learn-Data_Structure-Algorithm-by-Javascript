@@ -1,4 +1,4 @@
-/* Least Commond Multiple (LCM) Finding in JavaScript */
+/* Least Commond Multiple (LCM) Finding in JavaScript (ES6) */
 const gcd = require('./gcd');
 
 /*
