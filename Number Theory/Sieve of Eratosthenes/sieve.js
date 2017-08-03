@@ -1,8 +1,7 @@
 /* Sieve of Eratosthenes implementation in JavaScript */
 
+// This function will return the list of Primes less than given 'limit'
 function sieve(limit) {
-    var sieve = [],
-        primes = [];
 
     var sieve = Array.apply(null, Array(limit)).map(function (elem, index) {
         //As we know only 'even' prime number is 2, we are marking each of the 'even' index as false
@@ -20,6 +19,8 @@ function sieve(limit) {
                 sieve[k] = false;
         }
     }
+
+    var primes = [];
 
     sieve.forEach(function (value, key) {
         if (value)
