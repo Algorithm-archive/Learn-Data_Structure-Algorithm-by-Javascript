@@ -95,7 +95,7 @@
 
 - Number Theory
     - [Greatest Common Divisor (GCD)](./Number%20Theory/GCD/)
-    - Longest Common Multiplier (LCM)
+    - [Longest Common Multiplier (LCM)](./Number%20Theory/LCM/)
     - Euler Totient (Phi)
     - Primality Testing
     - Prime finding(Sieve of Eratosthenes)

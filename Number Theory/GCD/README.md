@@ -1,4 +1,4 @@
-# Greatest Commond Divisor Finding (Euclidean algorithm)
+# Greatest Common Divisor(GCD) Finding (Euclidean algorithm)
 
 The **Greatest Common Divisor (GCD)** of two integers A and B is the *largest integer that divides both A and B*. For example, the gcd of 8 and 12 is 4.
 
