@@ -94,7 +94,7 @@
 
 
 - Number Theory
-    - Greatest Common Divisor (GCD)
+    - [Greatest Common Divisor (GCD)](./Number%20Theory/GCD/)
     - Longest Common Multiplier (LCM)
     - Euler Totient (Phi)
     - Primality Testing
