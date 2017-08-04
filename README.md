@@ -100,8 +100,8 @@
     - Primality Testing
     - Prime finding(Sieve of Eratosthenes)
     - Prime factorization
-    - Factorial
-    - Fibonacci
+    - [Factorial](./Number%20Theory/Factorial/)
+    - [Fibonacci](./Number%20Theory/Fibonacci/)
     - Counting, Permutation, combination
     - Exponentiation    
     - Big Mod
