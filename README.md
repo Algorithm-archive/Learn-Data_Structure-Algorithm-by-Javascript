@@ -201,6 +201,11 @@ Couple of things to notice here:
 * We tried to implement the data structures and some algorithms in separate modules so that they can be used independently in any other codes. While `import` is indeed [part of ES6](http://2ality.com/2014/09/es6-modules-final.html), it is unfortunately not yet supported by any native environments, Node or browser. Until the native support introduced the easy workaround is to stick with the old **CommonJS Module format**(Which is supported in NodeJS and as we [advised earlier to test our codes in NodeJS](#how-to-use), so we are sticking with it). The modules will be [exported using CommonJS Module format and imported by 'require'](http://openmymind.net/2012/2/3/Node-Require-and-Exports/).
 Though there are other ways like `Babel`, `Rollup` etc., but that need some build configurations(And we don't want to make our codes more complicated). And at the end babel will convert the code to `require` and `module.exports` anyway.
 
+### FAQ
+- *Why you didn't use prototype methods in Objects?*
+
+    => Well, we could've. But before argue on that, you might want to read [this nice article](https://www.thecodeship.com/web-development/methods-within-constructor-vs-prototype-in-javascript/). We chose to follow the philosophy described on that article. But still, you can easily rewrite the codes of this repository using 'prototypal methods' for your own use. 
+
 
 ### Useful Links:
 * [Eloquent JavaScript](http://eloquentjavascript.net/)
