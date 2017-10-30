@@ -181,8 +181,8 @@ JavaScript **Arrays** are regular objects for which there is a particular relati
 ### Big-O Notation and Time Complexity Analysis
 
 [Algorithms in plain English: time complexity and Big-O notation](https://medium.freecodecamp.com/time-is-complex-but-priceless-f0abd015063c)
-
 [Big-O Cheat Sheet Link](http://bigocheatsheet.com/)
+[A beginner's guide to big-O notation](https://rob-bell.net/2009/06/a-beginners-guide-to-big-o-notation/)
 
 ### How to Use
 The easiest way to run and test the codes from this repository is to use [nodejs](https://nodejs.org/en/) (I have checked my code using nodejs v6.5.0 in an Windows machine).
