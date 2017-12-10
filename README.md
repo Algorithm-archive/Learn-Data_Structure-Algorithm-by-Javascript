@@ -40,7 +40,7 @@
 
 
 - Graph Algorithms
-    - Graph Representation
+    - [Graph Representation](./Graph%20Theory/Graph%20Representation)
     - Breadth First Search (BFS)
     - Depth First Search (DFS)
     - Topological Sort
