@@ -1,5 +1,3 @@
-var l = console.log;
-
 function DFSFindPath(graph, srcNode, destNode) {
     var isVisited = Object.create(null),
         isFound,
