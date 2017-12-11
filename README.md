@@ -39,7 +39,7 @@
   - [Radix Sort](./Sorting/Radix%20Sort/)
 
 
-- Graph Algorithms
+- [Graph Algorithms](./Graph%20Algorithms)
     - [Graph Representation](./Graph%20Theory/Graph%20Representation)
     - [Breadth First Search (BFS)](./Graph%20Theory/Breadth%20First%20Search)
     - [Depth First Search (DFS)](./Graph%20Theory/Depth%20First%20Search)
