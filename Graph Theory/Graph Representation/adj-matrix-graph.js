@@ -10,12 +10,11 @@
 
 //Graph Class
 function Graph(V) {
-
     var matrix = [];
     var num_of_vertex = 0;
     
     //Initializing a 2D matrix of size V*V with 0 values
-    this.init = function() {
+    this.init = function(V) {
         //If the given parameter is a already constructed matrix
         //then just assign it, otherwise initialize it with '0' values
         if (typeof V === 'object')
@@ -45,14 +44,14 @@ function Graph(V) {
         If an optional 'true' value for the 'bidirectional' parameter
         passed then the reverse position will be marked as 1 too.
     */
-    this.addEdge = function (u, v, bidirectional) {
-        if(u >= num_of_vertex || v >= num_of_vertex)
-            throw new Error('Wrong u or v value provided');
+    this.addEdge = function (src, dest, bidirectional) {
+        if(src >= num_of_vertex || dest >= num_of_vertex)
+            throw new Error('Wrong \'src\' or \'dest\' value provided');
 
-        matrix[u][v] = 1;
+        matrix[src][dest] = 1;
 
-        if(bidirectional) //optional Boolean parameter
-            matrix[v][u] = 1;
+        if(bidirectional) 
+            matrix[dest][src] = 1;
     }
 
     /*
@@ -61,14 +60,14 @@ function Graph(V) {
         If an optional 'true' value for the 'bidirectional' parameter
         passed then the reverse position will be marked as 0 too.
     */
-    this.removeEdge = function (u, v, bidirectional) {
-        if(u >= num_of_vertex || v >= num_of_vertex)
-            throw new Error('Wrong u or v value provided');
+    this.removeEdge = function (src, dest, bidirectional) {
+        if(src >= num_of_vertex || dest >= num_of_vertex)
+            throw new Error('Wrong \'src\' or \'dest\' value provided');
 
-        matrix[u][v] = 0;
+        matrix[src][dest] = 0;
 
-        if(bidirectional) //optional Boolean parameter
-            matrix[v][u] = 0;
+        if(bidirectional) 
+            matrix[dest][src] = 0;
     }
 
     //Adding a vertex means adding an additional Row and column in the matrix
@@ -116,11 +115,11 @@ function Graph(V) {
     }
 
     //Checking if an Edge exists between vertex 'u' and 'v'
-    this.isAdjacent = function(u, v) {
-        if(u >= num_of_vertex || v >= num_of_vertex)
-            throw new Error('Wrong u or v value provided');
+    this.hasEdge = function(vert_one, vert_two) {
+        if(vert_one >= num_of_vertex || vert_two >= num_of_vertex)
+            throw new Error('Wrong \'src\' or \'dest\' value provided');
 
-        return (matrix[u][v] === 1);
+        return (matrix[vert_one][vert_two] === 1);
     }
 
     //Get the list of Adjacent vertexes for a given vertex
@@ -134,6 +133,11 @@ function Graph(V) {
         }
 
         return neighbours;
+    }
+
+    //Get the graph representation as 2-D matrix
+    this.getMatrix = function() {
+        return matrix;
     }
 }
 
@@ -151,8 +155,8 @@ graph.removeEdge(1, 2);
 graph.printMatrix();
 graph.removeVertex(2);
 graph.printMatrix();
-console.log(graph.isAdjacent(1, 2));
-console.log(graph.isAdjacent(2, 3));
+console.log(graph.hasEdge(1, 2));
+console.log(graph.hasEdge(2, 3));
 console.log(graph.getNeighbours(1));
 
 
@@ -172,6 +176,6 @@ existingGraph.removeEdge(1, 2);
 existingGraph.printMatrix();
 existingGraph.removeVertex(1);
 existingGraph.printMatrix();
-console.log(existingGraph.isAdjacent(0, 1));
-console.log(existingGraph.isAdjacent(1, 1));
+console.log(existingGraph.hasEdge(0, 1));
+console.log(existingGraph.hasEdge(1, 1));
 console.log(existingGraph.getNeighbours(0));
