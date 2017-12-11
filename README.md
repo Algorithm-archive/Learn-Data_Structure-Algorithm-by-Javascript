@@ -42,7 +42,7 @@
 - Graph Algorithms
     - [Graph Representation](./Graph%20Theory/Graph%20Representation)
     - [Breadth First Search (BFS)](./Graph%20Theory/Breadth%20First%20Search)
-    - Depth First Search (DFS)
+    - [Depth First Search (DFS)](./Graph%20Theory/Depth%20First%20Search)
     - Topological Sort
     - Strongly Connected Components (SCC)
     - Minimum Spanning Tree (MST)
