@@ -14,6 +14,7 @@ function BFSFindShortestPath(graph, srcNode, dstNode) {
         currentNode = bfsQueue.shift();
         if (currentNode === dstNode) break;
 
+        if (!graph[currentNode]) continue;
         for (var i = 0; i < graph[currentNode].length; i++) {
             childNode = graph[currentNode][i];
             if (isPushed[childNode]) continue;
