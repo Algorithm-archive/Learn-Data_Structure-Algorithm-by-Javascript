@@ -18,6 +18,7 @@ function DFSFindPath(graph, srcNode, destNode) {
         isFound = node === destNode;
         if (isFound) return;
 
+        if (!graph[node]) return;
         for (var i = 0; i < graph[node].length; i++) {
             nextNode = graph[node][i];
             if (isVisited[nextNode]) continue;
