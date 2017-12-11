@@ -5,10 +5,10 @@
 
 /**
  * Processing BFS for the given srcNode in the Graph
- * If the 'dstNode' is not given, then it will process shortest path for all of the nodes from 'srcNode'
  * @param {Array} graph (will be an adjacency list) 
- * @param {Number} srcNode (0-indexed)
- * @param {Number} dstNode (Optional, 0-indexed) 
+ * @param {Number or String} srcNode 
+ * @param {Number or String} dstNode (Optional) 
+ * If the 'dstNode' is not given, then it will process shortest path for all of the nodes from 'srcNode'
  */
 function BFS(graph, srcNode, dstNode) {
     var isProcessed = [],
@@ -65,10 +65,10 @@ function BFS(graph, srcNode, dstNode) {
 
         while (parentNodeOf[currentNode]) {
             currentNode = parentNodeOf[currentNode];
-            shortestPath.unshift(currentNode);
+            shortestPath.push(currentNode);
         }
 
-        return shortestPath;
+        return shortestPath.reverse();
     }
 }
 
@@ -86,4 +86,4 @@ var srcNode = 1, dstNode = 4;
 var bfs = new BFS(graph, srcNode);
 
 console.log(bfs.getShortestDistance(dstNode));
-console.log(bfs.getShortestPath(dstNode));
+console.log(bfs.getShortestPath(dstNode).join(' -> '));
