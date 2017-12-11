@@ -41,7 +41,7 @@
 
 - Graph Algorithms
     - [Graph Representation](./Graph%20Theory/Graph%20Representation)
-    - Breadth First Search (BFS)
+    - [Breadth First Search (BFS)](./Graph%20Theory/Breadth%20First%20Search)
     - Depth First Search (DFS)
     - Topological Sort
     - Strongly Connected Components (SCC)
