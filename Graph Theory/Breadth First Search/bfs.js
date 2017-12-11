@@ -1,59 +1,90 @@
-function BFSFindShortestPath(graph, srcNode, dstNode) {
-    var isPushed = Object.create(null),
-        bfsQueue,
+/*
+    BFS(Breadth First Search) implementation in JavaScript
+    ------------------------------------------------------
+*/
+
+/**
+ * Processing BFS for the given srcNode in the Graph
+ * If the 'dstNode' is not given, then it will process shortest path for all of the nodes from 'srcNode'
+ * @param {Array} graph (will be an adjacency list) 
+ * @param {Number} srcNode (0-indexed)
+ * @param {Number} dstNode (Optional, 0-indexed) 
+ * @return {Number} sum
+ */
+function BFS(graph, srcNode, dstNode) {
+    var isProcessed = [],
+        bfsQueue = [],
+        parentNodeOf = [],
+        distance = [],
         currentNode,
-        childNode,
-        parentNodeOf = Object.create(null),
-        shortestPath;
+        childNode;
 
-    bfsQueue = [srcNode];
-    parentNodeOf[srcNode] = null;
-    isPushed[srcNode] = true;
 
-    while (bfsQueue.length > 0) {
-        currentNode = bfsQueue.shift();
-        if (currentNode === dstNode) break;
+    //Processing the distance and path from the given graph
+    this.init = function() {
+        //Initializing for the 'srcNode'
+        bfsQueue.push(srcNode);
+        parentNodeOf[srcNode] = null;
+        isProcessed[srcNode] = true;
+        distance[srcNode] = 0;
 
-        for (var i = 0; i < graph[currentNode].length; i++) {
-            childNode = graph[currentNode][i];
-            if (isPushed[childNode]) continue;
+        while (bfsQueue.length > 0) {
+            currentNode = bfsQueue.shift();
+            if (currentNode === dstNode) break;
 
-            parentNodeOf[childNode] = currentNode;
-            bfsQueue.push(childNode);
-            isPushed[childNode] = true;
+            var listLength = graph[currentNode].length;
+
+            for (var i = 0; i < listLength; i++) {
+                childNode = graph[currentNode][i];
+                if (isProcessed[childNode]) continue; //already entered in the queue, so don't need to add again
+
+                parentNodeOf[childNode] = currentNode;
+                distance[childNode] = distance[currentNode] + 1;
+                bfsQueue.push(childNode);
+                isProcessed[childNode] = true;
+            }
         }
     }
 
-    if (!isPushed[dstNode]) {
-        return {
-            distance: Infinity,
-            shortestPath: []
+    this.init();
+
+    //Get the shortest distance from the processed 'distance' Array
+    this.getShortestDistance = function (dstNode) {
+        if (!isProcessed[dstNode]) {
+            return Infinity;
+        } else {
+            return distance[dstNode];
         }
     }
 
-    shortestPath = [dstNode];
-    currentNode = dstNode;
+    //Get the Shortest Path from the breadcrumb of the 'parentNodeOf'
+    this.getShortestPath = function(dstNode) {
+        var shortestPath = [dstNode];
+        var currentNode = dstNode;
 
-    while (parentNodeOf[currentNode]) {
-        currentNode = parentNodeOf[currentNode];
-        shortestPath.unshift(currentNode);
-    }
+        if (!isProcessed[dstNode]) return [];
 
-    return {
-        distance: shortestPath.length - 1,
-        shortestPath: shortestPath
+        while (parentNodeOf[currentNode]) {
+            currentNode = parentNodeOf[currentNode];
+            shortestPath.unshift(currentNode);
+        }
+
+        return shortestPath;
     }
 }
 
 
-/* TESTING */
+/************ Testing BFS ***************/
 var graph = {
-    1: [2, 3],
-    2: [1, 3, 4, 5],
+    0: [1, 2],
+    1: [0, 2, 3, 4],
+    2: [0, 1, 3],
     3: [1, 2, 4],
-    4: [2, 3, 5],
-    5: [2, 4],
+    4: [1, 3],
 }
-var srcNode = 1, destNode = 5;
+var srcNode = 1, dstNode = 4;
 
-console.log(BFSFindShortestPath(graph, srcNode, destNode));
+var bfs = new BFS(graph, srcNode);
+
+console.log(bfs.getShortestDistance(dstNode));
+console.log(bfs.getShortestPath(dstNode));
