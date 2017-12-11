@@ -11,10 +11,10 @@
  * If the 'dstNode' is not given, then it will process shortest path for all of the nodes from 'srcNode'
  */
 function BFS(graph, srcNode, dstNode) {
-    var isProcessed = [],
+    var isProcessed = {},
         bfsQueue = [],
-        parentNodeOf = [],
-        distance = [],
+        parentNodeOf = {},
+        distance = {},
         currentNode,
         childNode;
 
