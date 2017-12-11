@@ -9,7 +9,6 @@
  * @param {Array} graph (will be an adjacency list) 
  * @param {Number} srcNode (0-indexed)
  * @param {Number} dstNode (Optional, 0-indexed) 
- * @return {Number} sum
  */
 function BFS(graph, srcNode, dstNode) {
     var isProcessed = [],
