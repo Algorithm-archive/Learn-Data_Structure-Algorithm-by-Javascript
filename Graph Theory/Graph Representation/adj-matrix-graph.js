@@ -138,7 +138,7 @@ function Graph(V) {
 }
 
 
-/************ Graph Representation ***************/
+/************ Testing Graph Representation ***************/
 
 //Initializing a new Graph Object by giving it's size as a parameter
 var graph = new Graph(5);
