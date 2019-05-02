@@ -16,7 +16,7 @@ function hanoi(count, source, aux, destination, moves) {
         // Move 'n-1' disks from 'source' to 'aux'
         hanoi(count - 1, source, destination, aux, moves);
 
-        // Move n-th disk from 'source' to 'detination'
+        // Move n-th disk from 'source' to 'destination'
         moves.push({
           'disk': count,
           'from': source,
