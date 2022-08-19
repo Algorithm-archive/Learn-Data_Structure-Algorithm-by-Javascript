@@ -17,7 +17,7 @@
   - Trie
   - Suffix Array
   - Segment Tree
-  - Binary Indexed Tree (BIT)
+  - [Binary Indexed Tree (BIT)](https://www.scaler.com/topics/data-structures/fenwick-tree/)
   - Heavy Light Decomposition
 
 
