@@ -172,6 +172,7 @@ JavaScript **Arrays** are regular objects for which there is a particular relati
 
 - [JavaScript data types and data structures - Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
 - [A Beginner’s Guide to JavaScript Variables and Datatypes - SitePoint](https://www.sitepoint.com/beginners-guide-javascript-variables-and-datatypes/)
+- [JavaScript Cheat Sheet](https://www.interviewbit.com/javascript-cheat-sheet)
 
 #### Object Oriented Programming in JavaScript
 
@@ -217,3 +218,4 @@ Though there are other ways like `Babel`, `Rollup` etc., but that need some buil
 * [Topcoder Tutorials](https://www.topcoder.com/community/data-science/data-science-tutorials/)
 * [GeeksforGeeks](http://www.geeksforgeeks.org/)
 * [hackerearth Tutorial](https://www.hackerearth.com/practice/)
+* [interviewbit](https://www.interviewbit.com/courses/programming/)
