@@ -214,6 +214,7 @@ Though there are other ways like `Babel`, `Rollup` etc., but that need some buil
 * [You-Dont-Know-JS](https://github.com/getify/You-Dont-Know-JS)
 * [JavaScript - Mozilla Developer Network](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [Algorithms, 4th Edition (book by: Robert Sedgewick and Kevin Wayne)](http://algs4.cs.princeton.edu/home/)
+* [Scaler Topics](https://www.scaler.com/topics/)
 * [Khan Academy tutorial on Algorithms](https://www.khanacademy.org/computing/computer-science/algorithms)
 * [Topcoder Tutorials](https://www.topcoder.com/community/data-science/data-science-tutorials/)
 * [GeeksforGeeks](http://www.geeksforgeeks.org/)
